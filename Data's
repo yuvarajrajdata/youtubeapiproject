@@ -5,11 +5,6 @@ Skills take away From This Project :
       Python scripting, Data Collection,MongoDB, Streamlit, API integration, Data Managment using MongoDB (Atlas) and SQL.......
 
 
-
-
-
-
-
 import streamlit as st
 from googleapiclient.discovery import build
 import pymongo
@@ -40,15 +35,6 @@ st.markdown(custom_css, unsafe_allow_html=True)
 
 # Rest of your Streamlit app code
 # ...
-
-
-
-
-
-
-
-
-
 
 
 # YouTube API key
