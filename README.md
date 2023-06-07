@@ -35,7 +35,7 @@ st.markdown(custom_css, unsafe_allow_html=True)
 
 
 # YouTube API key
-api_key = "AIzaSyCKSZepfYh4nv061aTkvsKRhyO4uxVJAOc"
+api_key = "use your api key" # from google developer console
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 # Streamlit app layout
@@ -43,7 +43,7 @@ st.title("YouTube Channel Data")
 
 
 # Connect to MongoDB database
-client = pymongo.MongoClient("mongodb+srv://yuvarajspt1998:Raj19980@cluster123.itdlmho.mongodb.net/")
+client = pymongo.MongoClient("mongodb+srv://username:password@cluster123.itdlmho.mongodb.net/")
 collection = client['youtubedata']['channeldetails']
 
 # Retrieve and display channel data
@@ -106,8 +106,8 @@ if st.button("Get Data & migrate to mongodb"):
 sql_connection = pymysql.connect(
     host="localhost",
     user="root",
-    password="Raj@199807886",
-    database="youtubedata"
+    password="your password",
+    database="your database"
 )
 
 # Retrieve available channel names from MongoDB
@@ -172,7 +172,7 @@ import sqlalchemy
 
 
 # URL-encode the password
-password = urllib.parse.quote_plus("Raj@199807886")
+password = urllib.parse.quote_plus("your password") # use this if your password contains spl cha.....#@$%^&
 
 # Create the connection string with the URL-encoded password
 connection_string = f"mysql+pymysql://root:{password}@localhost/youtubedata"
