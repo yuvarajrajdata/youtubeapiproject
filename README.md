@@ -4,19 +4,16 @@
 # Skills take away From This Project :
       Python scripting, Data Collection,MongoDB, Streamlit, API integration, Data Managment using MongoDB (Atlas) and SQL.......
 
-
+# Library need to import
 import streamlit as st
 from googleapiclient.discovery import build
 import pymongo
 import pymysql
 import mysql.connector
-
-
-
 import streamlit as st
 from streamlit_bokeh_events import streamlit_bokeh_events
 
-
+# streamlit theme
 custom_css = """
 <style>
 body {
@@ -34,7 +31,7 @@ h1 {
 st.markdown(custom_css, unsafe_allow_html=True)
 
 # Rest of your Streamlit app code
-# ...
+
 
 
 # YouTube API key
@@ -209,7 +206,7 @@ views = [row[2] for row in data]
 chart_data = {"Subscribers": subscribers, "Views": views}
 st.bar_chart(chart_data)
 
-
+# project accomplished
 
 
 
